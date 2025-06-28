@@ -1,3 +1,0 @@
-git add .
-git commit -m "עדכון README"
-git push origin main
