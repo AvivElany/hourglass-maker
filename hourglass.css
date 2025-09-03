@@ -1,9 +1,13 @@
+body {
+    background: #301717;
+}
+
 .hourglassContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+background: radial-gradient(circle,rgba(48, 23, 23, 1) 0%, rgba(11, 60, 140, 1) 50%, rgba(48, 23, 23, 1) 100%);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -21,17 +25,27 @@ h1 {
 }
 
 .playground {
-    color: #333333;
-    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    background-color: #333333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    color: #ffffff;
+    font-size: 18px;
     line-height: 1.5;
     text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.playground:hover {
+    transform:translateY(-5px);
 }
 
 .buttons {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    gap: 5px;
+    gap: 10px;
 }
 
 button {
@@ -64,10 +78,10 @@ form {
 
 #inputSize, #inputDigit {
     width: 200px;
-    padding: 10px;
+    padding: 15px;
     margin: 5px 0;
     border: 3px solid #cccccc;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 13.5px;
     background-color: rgb(202, 237, 202);
 }
